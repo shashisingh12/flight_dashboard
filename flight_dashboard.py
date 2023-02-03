@@ -248,7 +248,7 @@ JupyterDash.infer_jupyter_proxy_config()
 app.config.suppress_callback_exceptions = False
 
 # Read the airline data into pandas dataframe
-airline_data=pd.read_csv("C:\\Users\\Asus\\Downloads\\airline_data.csv")
+airline_data=pd.read_csv("airline_data.csv")
 
 
 # List of years 
