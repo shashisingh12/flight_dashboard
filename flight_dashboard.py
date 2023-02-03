@@ -58,21 +58,16 @@
 # </center>
 # 
 
-# In[4]:
+# In[ ]:
 
 
-airline_data =  pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv', 
-                            encoding = "ISO-8859-1",
-                            dtype={'Div1Airport': str, 'Div1TailNum': str, 
-                                   'Div2Airport': str, 'Div2TailNum': str})
 
 
-# In[43]:
+
+# In[ ]:
 
 
-airline_data=pd.read_csv("C:\\Users\\Asus\\Downloads\\airline_data.csv")
-bar_data = airline_data.groupby(['Month','CancellationCode'])['Flights'].sum().reset_index()
-bar_data
+
 
 
 # ## Requirements to create the dashboard
@@ -253,7 +248,7 @@ JupyterDash.infer_jupyter_proxy_config()
 app.config.suppress_callback_exceptions = False
 
 # Read the airline data into pandas dataframe
-airline_data = airline_data
+airline_data=pd.read_csv("C:\\Users\\Asus\\Downloads\\airline_data.csv")
 
 
 # List of years 
